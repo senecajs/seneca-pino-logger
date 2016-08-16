@@ -1,0 +1,17 @@
+{
+  "name": "seneca-pino-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pino.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pino": "^2.8.1"
+  },
+  "devDependencies": {
+    "seneca": "^2.1.0"
+  }
+}
