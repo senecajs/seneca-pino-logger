@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pino": "^2.8.1"
+    "pino": "^2.8.3"
   },
   "devDependencies": {
     "seneca": "git@github.com:senecajs/seneca.git#908dadf6454c0792c64a6b3164e672456b5e1388"
