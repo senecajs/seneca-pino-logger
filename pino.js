@@ -9,9 +9,7 @@ Logger.preload = function () {
   var options = seneca.options()
   var pino = options['pino-logger']
 
-  var logger = pino['instance'] ? pino['instance'] : Pino(pino['config'])
-  
-  var logger = Pino()
+  var logger = pino.instance || Pino(pino.config)
 
   function adapter (context, payload) {
     logger.error(payload)

@@ -4,7 +4,7 @@
   "description": "",
   "main": "pino.js",
   "scripts": {
-    "test": "npm test"
+    "test": "lab -L -c"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,10 @@
     "pino": "^2.8.3"
   },
   "devDependencies": {
+    "code": "^3.0.2",
+    "eslint-config-seneca": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "lab": "^11.0.0",
     "seneca": "senecajs/seneca"
   }
 }
