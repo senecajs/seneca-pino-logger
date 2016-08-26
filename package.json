@@ -4,7 +4,7 @@
   "description": "",
   "main": "pino.js",
   "scripts": {
-    "test": "lab -L -c",
+    "test": "lab -v -L -c test -t 99",
     "annotate": "docco transport.js -o docs/annotated",
     "coveralls": "lab -s -P test -r lcov | coveralls",
     "coverage": "lab -v -P test -L -t 80 -r html > docs/coverage.html"
