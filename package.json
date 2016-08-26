@@ -4,7 +4,10 @@
   "description": "",
   "main": "pino.js",
   "scripts": {
-    "test": "lab -L -c"
+    "test": "lab -L -c",
+    "annotate": "docco transport.js -o docs/annotated",
+    "coveralls": "lab -s -P test -r lcov | coveralls",
+    "coverage": "lab -v -P test -L -t 80 -r html > docs/coverage.html"
   },
   "author": "",
   "license": "ISC",
@@ -13,9 +16,20 @@
   },
   "devDependencies": {
     "code": "^3.0.2",
-    "eslint-config-seneca": "^3.0.0",
-    "eslint-plugin-standard": "^2.0.0",
-    "lab": "^11.0.0",
-    "seneca": "senecajs/seneca"
-  }
+    "eslint-config-seneca": "3.x.x",
+    "eslint-plugin-hapi": "4.x.x",
+    "eslint-plugin-standard": "2.x.x",
+    "lab": "11.0.x",
+    "pre-commit": "1.1.x",
+    "docco": "0.7.x",
+    "seneca": "plugin"
+  },
+  "files": [
+    "pino.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "pre-commit": [
+    "test"
+  ]
 }
