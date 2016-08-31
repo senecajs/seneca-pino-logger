@@ -12,10 +12,14 @@
 
 - __Lead Maintainer__: [David Gonzalez](https://github.com/dgonzalez)
 - __Sponsor__: [nearForm](http://www.nearform.com)
-- __node__: 4.x, 5.x, 6.x
+- __node__: 4.x, 6.x
 
 This module is a plugin that enables your Seneca-based microservice use [Pino](https://github.com/mcollina/pino)
 as a logger.
+
+### Seneca compatibility
+
+Supports Seneca versions **3.x**
 
 ## Getting Started
 This logger can be used in two ways:
