@@ -1,6 +1,7 @@
 'use strict'
 
 var Pino = require('pino')
+var LogFilter = require('seneca-log-filter')
 
 function Logger () {}
 
@@ -10,9 +11,12 @@ Logger.preload = function () {
   var pino = options['pino-logger']
 
   var logger = pino.instance || Pino(pino.config)
-
+  var logFilter = LogFilter(options['log'])
   function adapter (context, payload) {
-    logger.error(payload)
+    let filtered = logFilter(payload)
+    if (filtered) {
+      logger.error(payload)
+    }
   }
 
   return {
