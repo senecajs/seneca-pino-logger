@@ -12,7 +12,8 @@
   "author": "David Gonzalez",
   "license": "MIT",
   "dependencies": {
-    "pino": "2.8.3"
+    "pino": "2.8.3",
+    "seneca-log-filter": "^0.1.0"
   },
   "devDependencies": {
     "code": "3.0.x",
