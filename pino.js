@@ -7,7 +7,7 @@ function Logger () {}
 Logger.preload = function () {
   var seneca = this
   var options = seneca.options()
-  var pino = options['pino-logger']
+  var pino = options['pino-logger'] || { }
 
   var logger = pino.instance || Pino(pino.config)
 

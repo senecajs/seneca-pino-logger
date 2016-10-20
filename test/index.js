@@ -30,4 +30,11 @@ describe('Pino Logger', () => {
     expect(seneca.log).to.exist()
     done()
   })
+
+  it('will allow absent pino-logger configuration', (done) => {
+    const seneca = Seneca({legacy: {logging: false}})
+    seneca.use(Logger)
+    expect(seneca.log).to.exist()
+    done()
+  })
 })
