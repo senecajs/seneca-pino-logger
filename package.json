@@ -12,14 +12,14 @@
   "author": "David Gonzalez",
   "license": "MIT",
   "dependencies": {
-    "pino": "2.8.3"
+    "pino": "4.6.0"
   },
   "devDependencies": {
-    "code": "3.0.x",
+    "code": "4.1.x",
     "eslint-config-seneca": "3.x.x",
     "eslint-plugin-hapi": "4.x.x",
     "eslint-plugin-standard": "2.x.x",
-    "lab": "11.0.x",
+    "lab": "13.1.x",
     "pre-commit": "1.1.x",
     "docco": "0.7.x",
     "seneca": "plugin"
