@@ -12,7 +12,7 @@ Logger.preload = function () {
   var logger = pino.instance || Pino(pino.config)
 
   function adapter (context, payload) {
-    logger.error(payload)
+    logger[ payload.level || 'info' ](payload)
   }
 
   return {
