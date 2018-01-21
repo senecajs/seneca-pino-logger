@@ -2,16 +2,16 @@
 
 var Pino = require('pino')
 
-function Logger () {}
+function Logger() {}
 
-Logger.preload = function () {
+Logger.preload = function() {
   var seneca = this
   var options = seneca.options()
   var pino = options['pino-logger']
 
   var logger = pino.instance || Pino(pino.config)
 
-  function adapter (context, payload) {
+  function adapter(context, payload) {
     logger.error(payload)
   }
 

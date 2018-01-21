@@ -7,7 +7,8 @@
     "test": "lab -v -L -c test -t 90",
     "annotate": "docco transport.js -o docs/annotated",
     "coveralls": "lab -s -P test -r lcov | coveralls",
-    "coverage": "lab -v -P test -L -t 90 -r html > docs/coverage.html"
+    "coverage": "lab -v -P test -L -t 90 -r html > docs/coverage.html",
+    "prettier": "prettier --write --no-semi --single-quote pino.js test/*.js"
   },
   "author": "David Gonzalez",
   "license": "MIT",
@@ -16,20 +17,17 @@
   },
   "devDependencies": {
     "code": "4.1.x",
+    "docco": "0.7.x",
     "eslint-config-seneca": "3.x.x",
     "eslint-plugin-hapi": "4.x.x",
     "eslint-plugin-standard": "2.x.x",
     "lab": "13.1.x",
-    "pre-commit": "1.1.x",
-    "docco": "0.7.x",
-    "seneca": "plugin"
+    "prettier": "^1.9.2",
+    "seneca": "^3.4.3"
   },
   "files": [
     "pino.js",
     "README.md",
     "LICENSE"
-  ],
-  "pre-commit": [
-    "test"
   ]
 }
