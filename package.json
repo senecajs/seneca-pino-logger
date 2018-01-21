@@ -22,7 +22,6 @@
     "eslint-plugin-hapi": "4.x.x",
     "eslint-plugin-standard": "2.x.x",
     "lab": "13.1.x",
-    "pre-commit": "1.1.x",
     "prettier": "^1.9.2",
     "seneca": "^3.4.3"
   },
@@ -30,8 +29,5 @@
     "pino.js",
     "README.md",
     "LICENSE"
-  ],
-  "pre-commit": [
-    "test"
   ]
 }
