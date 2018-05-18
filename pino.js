@@ -12,8 +12,8 @@ Logger.preload = function () {
   var logger = pino.instance || Pino(pino.config)
 
   function adapter (context, payload) {
-    payload.level = +logger.levels.values[payload.level] || 30;
-    let fnName = logger.levels.labels[payload.level] || "info";
+    payload.level = +logger.levels.values[payload.level] || 30
+    var fnName = logger.levels.labels[payload.level] || 'info'
     logger[fnName](payload)
   }
 
