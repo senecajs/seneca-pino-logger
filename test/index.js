@@ -30,4 +30,12 @@ describe('Pino Logger', () => {
     expect(seneca.log).to.exist()
     done()
   })
+
+  it('will use default log level if payload specificiation is unknown', (done) => {
+    let mock = { info () {}, levels: { values: { }, labels: { } } }
+    const seneca = Seneca({legacy: {logging: false}, 'pino-logger': {instance: mock}})
+    seneca.use(Logger)
+    expect(seneca.log.info).not.throw()
+    done()
+  })
 })

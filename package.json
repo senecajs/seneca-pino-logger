@@ -4,7 +4,7 @@
   "description": "Pino logger plugin for Seneca",
   "main": "pino.js",
   "scripts": {
-    "test": "lab -v -L -c test -t 90",
+    "test": "lab -l -v -L -c test -t 90",
     "annotate": "docco transport.js -o docs/annotated",
     "coveralls": "lab -s -P test -r lcov | coveralls",
     "coverage": "lab -v -P test -L -t 90 -r html > docs/coverage.html"
