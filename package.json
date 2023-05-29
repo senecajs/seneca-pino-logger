@@ -9,6 +9,11 @@
     "coveralls": "lab -s -P test -r lcov | coveralls",
     "coverage": "lab -v -P test -L -t 90 -r html > docs/coverage.html"
   },
+  "homepage": "https://github.com/senecajs/seneca-pino-logger#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senecajs/seneca-pino-logger.git"
+  },
   "author": "David Gonzalez",
   "license": "MIT",
   "dependencies": {
