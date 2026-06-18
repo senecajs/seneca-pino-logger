@@ -1,5 +1,5 @@
 {
-  "name": "seneca-pino-logger",
+  "name": "@seneca/pino-logger",
   "version": "1.0.1",
   "description": "Pino logger plugin for Seneca",
   "main": "pino.js",
