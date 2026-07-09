@@ -3,8 +3,21 @@
 
 # @seneca/pino-logger
 
+[![npm version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Dependency Status][david-badge]][david-url]
+[![Coveralls][BadgeCoveralls]][Coveralls]
+[![Gitter][gitter-badge]][gitter-url]
+
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
+
+- __Lead Maintainer__: [David Gonzalez](https://github.com/dgonzalez)
+- __Sponsor__: [nearForm](http://www.nearform.com)
+- __node__: 4.x, 6.x
+
+This module is a plugin that enables your Seneca-based microservice use [Pino](https://github.com/mcollina/pino)
+as a logger.
 
 ## Install
 
