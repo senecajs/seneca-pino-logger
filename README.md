@@ -9,6 +9,8 @@
 [![Coveralls][BadgeCoveralls]][Coveralls]
 [![Gitter][gitter-badge]][gitter-url]
 
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
 
 - __Lead Maintainer__: [David Gonzalez](https://github.com/dgonzalez)
 - __Sponsor__: [nearForm](http://www.nearform.com)
